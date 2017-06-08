@@ -9,7 +9,7 @@ public class BookListerImpl implements BookLister {
 
 	public BookListerImpl() {
 		// finder = new SimpleBookFinderImpl();
-		finder = new FileBookFinderImpl();
+		// finder = new FileBookFinderImpl();
 	}
 
 	public Book[] findBooks(String name) {
@@ -22,7 +22,7 @@ public class BookListerImpl implements BookLister {
 		}
 		return (Book[]) books.toArray(new Book[books.size()]);
 	}
-	
+
 	public void setFinder(BookFinder finder) {
 		this.finder = finder;
 	}
